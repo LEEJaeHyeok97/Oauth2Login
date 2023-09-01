@@ -1,0 +1,26 @@
+# 서버 포트 설정
+server:
+  port: 9000
+  servlet:
+    encoding:
+      force: true
+      charset: UTF-8
+
+
+
+oauth:
+  kakao:
+    client-id: ad84ad8a4b339a01703a6fe593708a23
+    client-secret: QmVuTGK6aUSL2pNgAPGZQZSR3s7us8DX
+    url:
+      auth: https://kauth.kakao.com
+      api: https://kapi.kakao.com
+
+
+jpa:
+  database: mysql
+  database-platform: org.hibernate.dialect.MySQL8Dialect
+  generate-ddl: false
+  hibernate:
+    ddl-auto: update
+  show-sql: true
